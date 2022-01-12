@@ -3,17 +3,15 @@ package com.NailShop.booking.model;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
-
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @Table
-@EqualsAndHashCode
-@ToString
+@Data
 @AllArgsConstructor
+@Builder
 public class Booking {
 
     @Id
@@ -32,7 +30,8 @@ public class Booking {
     private String lastName;
     private String email;
     private Integer phoneNumber;
-    private Date appointDate;
+    private LocalDate appointDate;
+    private LocalTime bookingTime;
 
 
 

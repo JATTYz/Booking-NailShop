@@ -1,10 +1,11 @@
-package com.NailShop.booking;
+package com.NailShop.booking.service;
 
 import com.NailShop.booking.Repo.BookingRepository;
 import com.NailShop.booking.model.Booking;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.List;
 
 @Service
@@ -18,6 +19,7 @@ public class BookingService {
     }
 
     public void addBooking(Booking booking){
+
         bookingRepository.save(booking);
     }
 

@@ -1,5 +1,6 @@
-package com.NailShop.booking;
+package com.NailShop.booking.controller;
 
+import com.NailShop.booking.service.BookingService;
 import com.NailShop.booking.model.Booking;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
